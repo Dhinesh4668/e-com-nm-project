@@ -5,7 +5,7 @@ import {MdLocalOffer, MdShoppingBag, MdHomeFilled} from 'react-icons/md'
 
 const Nav = () => {
   return (
-    <nav className='navbar navbar-expand-lg navbar-light sticky-top '>
+    <nav className='navbar navbar-expand-lg navbar-light bg-body-secondary sticky-top '>
       <div className='container'>
         <Link className='navbar-brand' to='/'>
           Your Logo
