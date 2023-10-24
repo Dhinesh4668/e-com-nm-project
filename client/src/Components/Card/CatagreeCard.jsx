@@ -1,11 +1,10 @@
 import React from 'react';
 import catagreeData from '../../data/catagreedata'
 
-
 const CatagreeCard = () => {
   return (
-    <div className="container bg-primary">
-      <div className="p-3  d-flex justify-content-between">
+    <div className="container mt-2 rounded-2 bg-primary">
+      <div className="p-3  d-flex justify-content-evenly ">
         {catagreeData.map((item) => (
           <CardCatagtee key={item.id} item={item} />
         ))}
@@ -19,9 +18,9 @@ export default CatagreeCard;
 function CardCatagtee({ item }) {
   return (
     <div className="card ">
-      <img src={item.image} className="card-img-top" alt={item.title} />
-      <div className="card-body p-3">
-        <h5 className="card-title">{item.title}</h5>
+      <img src={item.image} className="card-img-top" style={{width: '10rem', height: '10rem'}} alt={item.title} />
+      <div className="card-body">
+        <p className="card-title">{item.title}</p>
       </div>
     </div>
   );

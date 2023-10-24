@@ -1,28 +1,27 @@
+import Mobile from '../assets/catagree/mobile.png'
+import Electronic from '../assets/catagree/electronc.png'
+import Pc from '../assets/catagree/pc-white.png'
+import HomeApp from '../assets/catagree/home-applience.png'
 const catagreeData = [
     {
       "id": 1,
-      "title": "offers",
-      "image": "image-url-1.jpg"
+      "title": "mobiles",
+      "image": Mobile
     },
     {
       "id": 2,
-      "title": "mobiles",
-      "image": "image-url-2.jpg"
+      "title": "electroinc",
+      "image": Electronic
     },
     {
       "id": 3,
-      "title": "electroinc",
-      "image": "image-url-2.jpg"
+      "title": "PC - computers",
+      "image": Pc
     },
     {
       "id": 4,
-      "title": "PC - computers",
-      "image": "image-url-2.jpg"
-    },
-    {
-      "id": 5,
       "title": "Home Appliences",
-      "image": "image-url-2.jpg"
+      "image": HomeApp
     }
   ];
 
