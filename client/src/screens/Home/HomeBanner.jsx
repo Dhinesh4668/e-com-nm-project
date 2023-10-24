@@ -3,6 +3,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Banner1 from '../../assets/Banner/banner1.png';
+import Banner2 from '../../assets/Banner/banner2.mp4'
 
 const HomeBanner = () => {
   const settings = {
@@ -23,7 +24,7 @@ const HomeBanner = () => {
           <img src={Banner1} style={{width: '100%'}}  className='className="mx-auto d-flex justify-content-center' alt="Image 1" />
         </div>
         <div>
-          <img src={Banner1} style={{width: '100%'}}  className='className="mx-auto d-flex justify-content-center'  alt="Image 2" />
+          <video src={Banner2} loop='true' onPlay={true} style={{width: '100%'}}  className='className="mx-auto d-flex justify-content-center'  alt="Image 2" />
         </div>
         <div>
           <img src={Banner1} style={{width: '100%'}}  className='className="mx-auto d-flex justify-content-center'  alt="Image 3" />

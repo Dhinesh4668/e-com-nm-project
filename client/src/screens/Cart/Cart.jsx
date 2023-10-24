@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import ProductsData from '../../data/products'; 
+import ProductsData from '../../data/products';  // Assuming you have a product data file
 
 const Cart = () => {
   const [cart, setCart] = useState([]);
@@ -11,13 +11,6 @@ const Cart = () => {
 
   return (
     <div className="bg-body-secondary">
-      <div className="container">
-        {/* <div className="row">
-          {ProductsData.map((product) => (
-            <Product key={product.id} product={product} onAddToCart={addToCart} />
-          ))}
-        </div> */}
-      </div>
       <div className="container mt-4">
         <h2>Shopping Cart</h2>
         <ul>

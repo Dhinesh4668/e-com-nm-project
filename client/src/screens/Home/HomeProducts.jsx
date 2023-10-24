@@ -4,7 +4,7 @@ import ProductsData from "../../data/products";
 const HomeProducts = () => {
 
     const imagestyle = {
-        with: '100%',
+        width: '100%',
         
     }
   return (

@@ -8,7 +8,7 @@ const Nav = () => {
     <nav className='navbar navbar-expand-lg navbar-light bg-body-secondary sticky-top '>
       <div className='container'>
         <Link className='navbar-brand' to='/'>
-          Your Logo
+          DK 🛒 E-COMM
         </Link>
         <button
           className='navbar-toggler'
