@@ -1,10 +1,10 @@
 import React from 'react';
-import catagreeData from '../../data/catagreedata'
+import catagreeData from '../../data/catagreedata';
 
 const CatagreeCard = () => {
   return (
-    <div className="container mt-2 rounded-2 bg-primary">
-      <div className="p-3  d-flex justify-content-evenly ">
+    <div className="container mt-2 rounded-2 bg-secondary">
+      <div className="p-3 d-flex justify-content-evenly">
         {catagreeData.map((item) => (
           <CardCatagtee key={item.id} item={item} />
         ))}
@@ -13,19 +13,23 @@ const CatagreeCard = () => {
   );
 }
 
-export default CatagreeCard;
-
 function CardCatagtee({ item }) {
   return (
-    <div className="card ">
-      <img src={item.image} className="card-img-top" style={{width: '10rem', height: '10rem'}} alt={item.title} />
+    <div className="card pointer text-center" >
+      <img
+        src={item.image}
+        className="card-img-top "
+        style={{ width: '8rem', height: '6rem' }} // Adjust the width and height as needed
+        alt={item.title}
+      />
       <div className="card-body">
-        <p className="card-title">{item.title}</p>
+        <p className="card-title ">{item.title}</p>
       </div>
     </div>
   );
 }
 
+export default CatagreeCard;
 
 
 // import React from 'react';
