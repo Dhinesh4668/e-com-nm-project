@@ -24,6 +24,7 @@ db.connect((err)=>{
 app.get('/api/login',(req,res)=>{
     res.send('login page')
 })
+// display the data 
 app.get('/data',(req,res)=>{
     const GetData = 'SELECT * FROM `user`';
     db.query(GetData, (error,result)=>{
@@ -35,15 +36,12 @@ app.get('/data',(req,res)=>{
         }
     })
 })
-
+// creat the user page
 app.post('/api/signup',(req,res)=>{
     res.send("reger the user name")
 })
-
+// root directry
 app.get('/',(req,res)=>{
     res.send('home')
 })
-app.listen(port,()=>{
-    console.log(`localhost:${port}`)
-    console.log("server started")
-})
+app.listen(port,()=>{console.log("server started")})
